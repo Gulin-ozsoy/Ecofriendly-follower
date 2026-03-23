@@ -13,13 +13,27 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# Veri
+# Gıda Verileri
 food_data = {
     "Elma 🍎": 0.4,
     "Avokado 🥑": 2.5,
-    "Sığır Eti 🥩": 27.0,
-    "Mercimek 🍲": 0.9
+    "Dana Eti 🥩": 27.0,
+    "Mercimek 🍲": 0.9,
+    "Çilek 🍓": 0.5,
+    "Domates 🍅": 0.2,
+    "Salatalık 🥒": 0.15,
+    "Yumurta 🥚": 4.8,
+    "Süt (1L) 🥛": 3.2,
+    "Çay (Bardak) ☕": 0.05,
+    "Şeker (kg) 🍬": 0.6,
+    "Un (kg) 🌾": 0.7,
+    "Zeytinyağı (1L) 🫒": 4.5,
+    "Ekmek 🥖": 0.6
 }
+
+# Sol Panel Düzenleme
+food = st.sidebar.selectbox("Gıdalar", list(food_data.keys()))
+
 
 # Arayüz
 st.title("🍃 Nature-Flow")
