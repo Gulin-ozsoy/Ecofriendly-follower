@@ -31,9 +31,6 @@ food_data = {
     "Ekmek 🥖": 0.6
 }
 
-# Sol Panel Düzenleme
-food = st.sidebar.selectbox("Gıdalar", list(food_data.keys()))
-
 
 # Arayüz
 st.title("🍃 Nature-Flow")
