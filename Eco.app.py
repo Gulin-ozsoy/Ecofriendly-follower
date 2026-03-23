@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # Sayfa ayarları
-st.set_page_config(page_title="Nature-Flow", layout="wide")
+st.set_page_config(page_title="Ecofriendly-follower", layout="wide")
 
 # Tema
 st.markdown("""
@@ -33,7 +33,7 @@ food_data = {
 
 
 # Arayüz
-st.title("🍃 Nature-Flow")
+st.title("🍃 Ecofriendly-follower")
 food = st.sidebar.selectbox("Gıda seç:", list(food_data.keys()))
 amount = st.sidebar.slider("Gram:", 50, 1000, 250)
 
